@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Hubbussalam - Sarung Celana Modern, Praktis, dengan Kantong Fungsional</title>
+    <meta name="description" content="Temukan sarung etnik modern dari Hubbussalam. Praktis langsung pakai, dilengkapi dua kantong fungsional, dengan beragam motif dan bahan premium. Coba AI Motif Mixer kami!">
+    <meta name="keywords" content="sarung modern, sarung celana, sarung saku, sarung etnik, motif batik, gaya etnik, sarung praktis">
+    <meta name="author" content="Hubbussalam">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js for Interactivity -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .smooth-transition { transition: all 0.3s ease-in-out; }
+        [x-cloak] { display: none !important; }
+        .hero-bg { background-color: #f8fafc; }
+        .ai-section { background: linear-gradient(135deg, #4f46e5, #7c3aed); }
+    </style>
+</head>
+
+<body x-data="sarungStore" class="bg-gray-100 text-gray-800">
+
+    <!-- =========== HEADER & NAVBAR =========== -->
+    <header class="bg-white/95 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-800">Hubbu<span class="text-indigo-600">ssalam</span></a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#fitur" class="text-gray-600 hover:text-indigo-600 smooth-transition">Keunggulan</a>
+                <a href="#ai-mixer" class="text-gray-600 hover:text-indigo-600 smooth-transition">AI Mixer</a>
+                <a href="#produk" class="text-gray-600 hover:text-indigo-600 smooth-transition">Koleksi</a>
+            </nav>
+            <a href="#produk" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-full hover:bg-indigo-700 smooth-transition shadow-lg hover:shadow-indigo-300 transform hover:-translate-y-0.5">
+                Belanja Sekarang
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== HERO SECTION =========== -->
+        <section id="hero" class="pt-28 pb-16 hero-bg">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+                        Sarung Etnik Generasi Baru.
+                        <span class="text-indigo-600">Praktis, Fungsional, dan Cerdas.</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
+                        Selamat tinggal kerumitan. Sarung celana kami siap pakai, punya dua kantong multifungsi, dan kini Anda bisa merancang motif sendiri dengan bantuan AI.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#ai-mixer" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-indigo-700 smooth-transition shadow-lg hover:shadow-indigo-300 transform hover:-translate-y-1">
+                            <i class="fas fa-magic mr-2"></i> Rancang Motif AI
+                        </a>
+                        <a href="#produk" class="bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-300 smooth-transition">
+                            Lihat Koleksi
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <div class="bg-white p-4 rounded-2xl shadow-xl transform hover:scale-105 smooth-transition">
+                        <img src="sarung2.jpeg" alt="Sarung Celana Etnik Modern dengan Saku" class="w-full h-auto rounded-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== FITUR / KEUNGGULAN SECTION =========== -->
+        <section id="fitur" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Inovasi di Setiap Helainya</h2>
+                    <p class="text-lg text-gray-600 mt-3">Dirancang untuk gaya hidup modern Anda.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl text-indigo-500 mb-4"><i class="fas fa-running"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Langsung Pakai</h3>
+                        <p class="text-gray-600">Desain celana instan, anti melorot dan hemat waktu. Siap dalam 5 detik.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl text-indigo-500 mb-4"><i class="fas fa-mobile-alt"></i><i class="fas fa-wallet ml-2"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Dua Kantong Fungsional</h3>
+                        <p class="text-gray-600">Kantong kanan dan kiri yang dalam untuk handphone, dompet, dan kunci. Ibadah & beraktivitas jadi tenang.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 smooth-transition">
+                        <div class="text-4xl text-indigo-500 mb-4"><i class="fas fa-palette"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Motif & Bahan Pilihan</h3>
+                        <p class="text-gray-600">Pilihan motif etnik premium dan bahan berkualitas (katun, rayon) yang bisa disesuaikan dengan selera Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- =========== AI MOTIF MIXER SECTION =========== -->
+        <section id="ai-mixer" class="py-20 ai-section text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-extrabold">AI Motif Mixer</h2>
+                <p class="text-lg text-indigo-200 mt-3 max-w-2xl mx-auto">Punya ide motif unik? Coba visualisasikan imajinasi Anda di sini. Cukup ketikkan deskripsi, dan biarkan AI kami bekerja!</p>
+                
+                <div x-data="aiMotifMixer" class="mt-8 max-w-3xl mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <input x-model="prompt" @keydown.enter="generateMotif" type="text" class="w-full text-gray-800 px-5 py-3 rounded-full focus:outline-none focus:ring-4 focus:ring-indigo-300" placeholder="Contoh: Motif mega mendung dengan warna galaksi ungu...">
+                        <button @click="generateMotif" class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 smooth-transition">
+                            <span x-show="!loading">Buat Desain</span>
+                            <span x-show="loading"><i class="fas fa-spinner animate-spin"></i> Memproses...</span>
+                        </button>
+                    </div>
+                    
+                    <div class="mt-8 bg-black bg-opacity-20 p-4 rounded-xl min-h-[300px] flex items-center justify-center">
+                        <div x-show="!imageUrl && !loading" class="text-indigo-200">
+                            <i class="fas fa-image text-5xl"></i>
+                            <p class="mt-2">Hasil desain AI akan muncul di sini</p>
+                        </div>
+                        <div x-show="loading" class="text-white">
+                            <i class="fas fa-spinner animate-spin text-5xl"></i>
+                            <p class="mt-2">AI sedang melukis imajinasi Anda...</p>
+                        </div>
+                        <div x-show="imageUrl" x-cloak>
+                            <img :src="imageUrl" alt="AI Generated Sarong Motif" class="rounded-lg shadow-2xl max-w-full h-auto max-h-96">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== PRODUK SECTION =========== -->
+        <section id="produk" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Koleksi Terlaris</h2>
+                    <p class="text-lg text-gray-600 mt-3">Motif pilihan yang telah menjadi favorit banyak orang.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Produk akan di-render oleh Alpine.js -->
+                    <template x-for="product in products" :key="product.id">
+                        <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden flex flex-col group">
+                            <div class="relative overflow-hidden">
+                                <img :src="product.image" :alt="product.name" class="w-full h-80 object-cover smooth-transition group-hover:scale-105">
+                            </div>
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="text-xl font-bold text-gray-800" x-text="product.name"></h3>
+                                <p class="mt-2 text-indigo-600 font-semibold text-lg" x-text="formatCurrency(product.price)"></p>
+                                <p class="mt-2 text-gray-600 text-sm flex-grow" x-text="product.description"></p>
+                                <button class="mt-4 w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-700 smooth-transition">
+                                    <i class="fas fa-shopping-cart mr-2"></i> Tambah ke Keranjang
+                                </button>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </section>
+
+         <!-- =========== FOOTER =========== -->
+        <footer class="bg-gray-800 text-white pt-12 pb-8">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-2xl font-bold">GayaEtnik</h2>
+                <p class="mt-2 max-w-md mx-auto text-gray-400">Inovasi Tradisi untuk Generasi Dinamis.</p>
+                <div class="mt-8 text-gray-400 text-sm">
+                    &copy; <span x-text="new Date().getFullYear()"></span> GayaEtnik. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script>
+        // Alpine.js Store untuk logika utama
+        function sarungStore() {
+            return {
+                products: [
+                    {
+                        id: 1,
+                        name: 'Sarung Celana Motif Lontara',
+                        price: 185000,
+                        image: 'https://placehold.co/400x500/312E81/FFFFFF?text=Lontara',
+                        description: 'Motif klasik Lontara dari Sulawesi, melambangkan kebijaksanaan. Bahan katun premium sejuk.'
+                    },
+                    {
+                        id: 2,
+                        name: 'Sarung Celana Motif Mega Mendung',
+                        price: 175000,
+                        image: 'https://placehold.co/400x500/4F46E5/FFFFFF?text=Mega+Mendung',
+                        description: 'Inspirasi dari batik Cirebon yang ikonik. Melambangkan kesabaran dan ketenangan. Warna biru menawan.'
+                    },
+                    {
+                        id: 3,
+                        name: 'Sarung Celana Motif Parang',
+                        price: 180000,
+                        image: 'https://placehold.co/400x500/7C3AED/FFFFFF?text=Parang',
+                        description: 'Motif Parang dari Jawa yang tegas, simbol kekuatan. Bahan rayon viscose yang jatuh dan elegan.'
+                    }
+                ],
+                formatCurrency(amount) {
+                    return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount);
+                }
+            };
+        }
+
+        // Alpine.js component untuk AI Motif Mixer
+        function aiMotifMixer() {
+            return {
+                prompt: '',
+                loading: false,
+                imageUrl: '',
+                async generateMotif() {
+                    if (!this.prompt.trim()) {
+                        alert('Silakan masukkan deskripsi motif yang Anda inginkan.');
+                        return;
+                    }
+                    this.loading = true;
+                    this.imageUrl = '';
+
+                    // --- SIMULASI PANGGILAN AI DARI BACKEND ---
+                    // Di aplikasi nyata, baris ini akan memanggil backend Anda
+                    // const response = await fetch('/api/generate-motif', {
+                    //     method: 'POST',
+                    //     headers: { 'Content-Type': 'application/json' },
+                    //     body: JSON.stringify({ prompt: this.prompt })
+                    // });
+                    // const data = await response.json();
+                    // this.imageUrl = data.imageUrl;
+                    
+                    // --- KODE SIMULASI (HANYA UNTUK DEMO) ---
+                    // Menggunakan placeholder dinamis berdasarkan input
+                    console.log(`Membuat motif untuk: ${this.prompt}`);
+                    await new Promise(resolve => setTimeout(resolve, 2500)); // Simulasi waktu proses AI
+                    const placeholderText = this.prompt.split(' ').slice(0, 3).join('+');
+                    this.imageUrl = `https://placehold.co/500x500/6D28D9/FFFFFF?text=${encodeURIComponent(placeholderText)}...`;
+                    // --- AKHIR KODE SIMULASI ---
+
+                    this.loading = false;
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
